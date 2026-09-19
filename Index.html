@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Preload Hero pour chargement prioritaire -->
+<link rel="preload" as="image" href="images/hero-warehouse.webp" fetchpriority="high">
 <style>
 :root{
   --ink:#0c1220;
@@ -316,7 +318,7 @@ h2 em{font-style:normal;color:var(--accent)}
 <!-- NAV -->
 <nav class="nav" id="nav">
   <a class="nav-logo" href="#top">
-    <img class="nav-logo-img" src="images/Logo-min.png" alt="RV Medical logo">
+    <img class="nav-logo-img" src="images/logorv.webp" alt="RV Medical logo" fetchpriority="high" decoding="async">
     <div class="nav-logo-text">RV MEDICAL<span>Used Medical Equipment</span></div>
   </a>
   <div class="nav-links">
@@ -346,7 +348,7 @@ h2 em{font-style:normal;color:var(--accent)}
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="hero-bg">
-    <img src="images/hero-warehouse.webp" alt="Medical equipment stock at RV Medical warehouse">
+    <img src="images/hero-warehouse.webp" alt="Medical equipment stock at RV Medical warehouse" fetchpriority="high" decoding="async" width="1800" height="1202">
   </div>
   <div class="hero-inner">
     <div class="hero-tag">Istanbul · Operating since 2008</div>
@@ -381,15 +383,15 @@ h2 em{font-style:normal;color:var(--accent)}
   <div class="stock-grid">
     <div class="stock-main reveal">
       <span class="stock-badge">Stock Verified</span>
-      <img src="images/stock-main.webp" alt="Warehouse of used medical equipment">
+      <img src="images/stock-main.webp" alt="Warehouse of used medical equipment" loading="lazy" decoding="async">
     </div>
     <div class="stock-side">
       <div class="stock-side-item reveal reveal-d1">
-        <img src="images/stock-side-1.webp" alt="Medical devices in stock">
+        <img src="images/stock-side-1.webp" alt="Medical devices in stock" loading="lazy" decoding="async">
         <span class="ssi-label">Available Now</span>
       </div>
       <div class="stock-side-item reveal reveal-d2">
-        <img src="images/stock-side-2.webp" alt="Medical equipment inspection">
+        <img src="images/stock-side-2.webp" alt="Medical equipment inspection" loading="lazy" decoding="async">
         <span class="ssi-label">In Stock</span>
       </div>
     </div>
@@ -464,7 +466,7 @@ h2 em{font-style:normal;color:var(--accent)}
   </div>
   <div class="team-grid">
     <div class="team-photo reveal">
-      <img src="images/team-technicien.webp" alt="RV Medical technician working on medical equipment">
+      <img src="images/team-technicien.webp" alt="RV Medical technician working on medical equipment" loading="lazy" decoding="async">
     </div>
     <div class="team-points">
       <div class="team-point reveal"><span class="tp-num">01</span><div><h4>Inspection</h4><p>Our technical team has extensive experience working with medical equipment and supporting installations and projects in Turkey and abroad.</p></div></div>
@@ -483,7 +485,7 @@ h2 em{font-style:normal;color:var(--accent)}
     <p class="section-lead reveal reveal-d1">Based in Istanbul, RV Medical combines access to Turkey's medical-equipment market with international commercial experience. We work with healthcare professionals, distributors, resellers and medical projects looking for quality equipment at competitive prices.</p>
   </div>
   <div class="global-visual reveal">
-    <img class="gv-map" src="images/dist-map.webp" alt="World map showing RV Medical's international distribution from Istanbul">
+    <img class="gv-map" src="images/dist-map.webp" alt="World map showing RV Medical's international distribution from Istanbul" loading="lazy" decoding="async">
     <div class="gv-panel">
       <p class="gv-tagline">Wherever you are<br>we can reach you</p>
     </div>
@@ -503,7 +505,7 @@ h2 em{font-style:normal;color:var(--accent)}
   </div>
   <div class="opp-grid">
     <div class="opp-photo reveal">
-      <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1000&q=80" alt="Medical equipment facility">
+      <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1000&q=80" alt="Medical equipment facility" loading="lazy" decoding="async">
     </div>
     <div class="opp-text">
       <p class="reveal">Turkey's healthcare infrastructure has undergone a remarkable transformation over the past two decades. <strong>New large-scale hospital infrastructures</strong> and the restructuring of older facilities have released substantial quantities of medical equipment into the market.</p>
@@ -575,7 +577,7 @@ h2 em{font-style:normal;color:var(--accent)}
     <div class="feat-card reveal">
       <div class="feat-img">
         <span class="feat-status">In Stock</span>
-        <img src="images/feat-ultrasound.webp" alt="Ultrasound system">
+        <img src="images/feat-ultrasound.webp" alt="Ultrasound system" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <span class="feat-brand">GE HealthCare</span>
@@ -588,7 +590,7 @@ h2 em{font-style:normal;color:var(--accent)}
     <div class="feat-card reveal reveal-d1">
       <div class="feat-img">
         <span class="feat-status">Available Now</span>
-        <img src="images/feat-monitor.webp" alt="Nerve Monitoring">
+        <img src="images/feat-monitor.webp" alt="Nerve Monitoring" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <span class="feat-brand">Medtronic</span>
@@ -601,7 +603,7 @@ h2 em{font-style:normal;color:var(--accent)}
     <div class="feat-card reveal reveal-d2">
       <div class="feat-img">
         <span class="feat-status">In Stock</span>
-        <img src="images/featured-cardio.webp" alt="Defibrillator">
+        <img src="images/featured-cardio.webp" alt="Defibrillator" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <span class="feat-brand">Philips</span>
@@ -614,7 +616,7 @@ h2 em{font-style:normal;color:var(--accent)}
     <div class="feat-card reveal">
       <div class="feat-img">
         <span class="feat-status">In Stock</span>
-        <img src="images/feat-monitor-1.webp" alt="Vital Signs Monitor">
+        <img src="images/feat-monitor-1.webp" alt="Vital Signs Monitor" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <span class="feat-brand">Welch Allyn</span>
@@ -627,7 +629,7 @@ h2 em{font-style:normal;color:var(--accent)}
     <div class="feat-card reveal reveal-d1">
       <div class="feat-img">
         <span class="feat-status">Available Now</span>
-        <img src="images/feat-endoscope.webp" alt="Endoscope light source">
+        <img src="images/feat-endoscope.webp" alt="Endoscope light source" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <span class="feat-brand">Storz Xenon</span>
@@ -640,7 +642,7 @@ h2 em{font-style:normal;color:var(--accent)}
     <div class="feat-card reveal reveal-d2">
       <div class="feat-img">
         <span class="feat-status">In Stock</span>
-        <img src="images/feat-ultrasound-1.webp" alt="Ultrasond system">
+        <img src="images/feat-ultrasound-1.webp" alt="Ultrasond system" loading="lazy" decoding="async">
       </div>
       <div class="feat-body">
         <span class="feat-brand">Siemens </span>
@@ -670,7 +672,7 @@ h2 em{font-style:normal;color:var(--accent)}
 <!-- FINAL CTA -->
 <section class="final" id="contact">
   <div class="final-bg">
-    <img src="images/hero-warehouse.webp" alt="Medical equipment">
+    <img src="images/hero-warehouse.webp" alt="Medical equipment" loading="lazy" decoding="async">
   </div>
   <div class="final-inner">
     <div class="kicker reveal">Start the Conversation</div>
